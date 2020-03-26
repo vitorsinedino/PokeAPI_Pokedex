@@ -15,7 +15,8 @@ function atClick(){
         type.removeChild(pokeType);
     }
     id = text.value;
-    fetch(`https://pokeapi.co/api/v2/pokemon/${id}/`)
+    if(parseInt(id) < 808) {
+        fetch(`https://pokeapi.co/api/v2/pokemon/${id}/`)
         .then((response) =>{
             return response.json();
         })
@@ -30,6 +31,11 @@ function atClick(){
             type.appendChild(pokeType);
             count += 1;
         });
+    }
+    else{
+        alert("There is no such pokemon ID");
+    }
+    
 }
 
 
