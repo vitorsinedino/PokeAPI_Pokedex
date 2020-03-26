@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,18 +10,31 @@
 </head>
 <body>
     <div class="container">
-        <h2>Pokemons</h2>
+        <h2 class="center-align" style="color: #ffff;">Pokedex</h2>
         <br>
-        <div class="input-field col s6">
-            <input placeholder="select number" id="number" type="number" class="validate">
-            <label for="first_name">Chose a Number and see a pokemon</label>
-            <button id="btn1" class="waves-effect waves-light btn">submit</button>
-          <div class="input-field col s6">
+        <div class="card-body">
+            <div class="card-panel center-align" id='input1'>
+                <div class="input-field col s6">
+                    <h6 class="center-align" style="color: rgb(0, 0, 0);">Choose a pokemon id (number)</h6>
+                    <input placeholder="select number" id="number" type="number" class="validate">
+                    <label for="first_name"></label>
+                    <button id="btn1" class="waves-effect waves-light btn">submit</button>
+                  <div class="input-field col s6">
+            </div>
+        </div>
         <br>
         <div>
-            <img src="#" id="display" alt="poke">
-            <h6 id="name1">Name : </h6>
-            <h6 id="type">Type : </h6>
+            <div class="card-body">
+                <div class="card-panel center-align">
+                    <div class="item">
+                        <img src="#" id="display" alt="poke">
+                        <h6 id="name1">Name : </h6>
+                        <h6 id="type">Type : </h6>
+                    </div>
+                </div>
+                
+            </div>
+            
         </div>
     </div>
 
